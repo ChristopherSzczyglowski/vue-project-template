@@ -1,0 +1,56 @@
+{
+  "name": "application-dev",
+  "dockerFile": "Dockerfile",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached",
+  "workspaceFolder": "/app",
+  "extensions": [
+    "ms-azuretools.vscode-docker",
+    "mhutchie.git-graph",
+    "eamodio.gitlens",
+    "MS-vsliveshare.vsliveshare",
+    "mechatroner.rainbow-csv",
+    "dotjoshjohnson.xml",
+    "lextudio.restructuredtex",
+    "github.vscode-pull-request-github",
+    "esbenp.prettier-vscode",
+    "orta.vscode-jest",
+    "dbaeumer.vscode-eslint",
+    "redhat.vscode-yaml",
+    "ms-vscode.makefile-tools",
+    "vue.volar"
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+      88
+    ],
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewLines": true,
+    "eslint.validate": [
+      "javascript"
+    ],
+    "eslint.format.enable": true,
+    "jest.autoRun": {
+      "watch": false,
+      "onSave": "test-src-file"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[yaml]": {
+      "editor.autoIndent": "advanced"
+    },
+    "[dockercompose]": {
+      "editor.autoIndent": "advanced"
+    }
+  }
+}
